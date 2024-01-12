@@ -6,6 +6,7 @@ export const FontFamily = {
   export const FontSize = {
     size_xl: 20,
     size_xs: 12,
+    size_mini: 15,
   };
   /* Colors */
   export const Color = {
@@ -15,8 +16,9 @@ export const FontFamily = {
     colorBlack: "#000",
     colorSilver: "#c6c6c6",
     colorWhite: "#fff",
+    colorSeagreen: "#439755",
   };
-  /* border radiuses */
-  export const Border = {
-    br_xl: 20,
-  };
+    /* border radiuses */
+    export const Border = {
+      br_xl: 20,
+    };

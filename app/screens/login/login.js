@@ -1,32 +1,38 @@
 import * as React from "react";
-import { Text, StyleSheet, Pressable, View, Image } from "react-native";
+import { Text, StyleSheet, Pressable, View, Image, TouchableOpacity } from "react-native";
 import {LinearGradient} from 'expo-linear-gradient';
 import { Color, FontFamily, FontSize, Border } from "../../GlobalStyles";
 
-const LoginPreExistingAccount = () => {
+const LoginPreExistingAccount = ({navigation}) => {
   return (
     <View style={styles.loginPreExistingAccount}>
       <View style={[styles.signUpButton, styles.logoPosition]}>
-        <Pressable style={styles.signUp} onPress={() => {}}>
+        <Pressable style={styles.signUp} onPress={() => {
+          navigation.navigate("Registration");
+        }}>
           <Text style={[styles.signUp1, styles.signUp1Layout]}>Sign Up</Text>
         </Pressable>
         <Text style={[styles.dontHaveAn, styles.dontHaveAnTypo]}>
           Don’t have an account?
         </Text>
       </View>
-      <Pressable style={styles.signInButton} onPress={() => {}}>
-        <LinearGradient
-          style={styles.signInButton1}
-          locations={[0, 1]}
-          colors={["#006c3d", "#8cc56e"]}
-          useAngle={true}
-          angle={-88.17}
-        />
-        <Text style={styles.signIn}>Sign In</Text>
-      </Pressable>
+      <TouchableOpacity>
+        <Pressable style={styles.signInButton} onPress={() => {}}>
+          <LinearGradient
+            style={styles.signInButton1}
+            locations={[0, 1]}
+            colors={["#006c3d", "#8cc56e"]}
+            useAngle={true}
+            angle={-88.17}
+          />
+          <Text style={styles.signIn}>Sign In</Text>
+        </Pressable>
+      </TouchableOpacity>
       <Pressable
         style={[styles.forgotPassword, styles.signUp1Layout]}
-        onPress={() => {}}
+        onPress={() => {
+          navigation.navigate("ForgotPassword");
+        }}
       >
         <View style={[styles.forgotPasswordBox, styles.boxBg]} />
         <Text style={[styles.forgotPassword1, styles.dontHaveAnTypo]}>
