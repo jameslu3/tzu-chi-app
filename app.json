@@ -5,9 +5,26 @@
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "@react-native-firebase/app",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
     ],
     "name": "Tzu-Chi-App",
-    "slug": "Tzu-Chi-App"
+    "slug": "Tzu-Chi-App",
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "package": "com.tzuchi.app"
+    },
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "com.tzuchi.app"
+    }
   }
 }

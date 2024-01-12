@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "580225676354",
+    "project_id": "tc-app-afc9d",
+    "storage_bucket": "tc-app-afc9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580225676354:android:3a0b023e32f23ebe5ee9db",
+        "android_client_info": {
+          "package_name": "com.tzuchi.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBztNjH-3o7uaQMjrgettK2vkakM6Q1bj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
